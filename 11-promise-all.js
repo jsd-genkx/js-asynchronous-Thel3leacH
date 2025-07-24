@@ -5,8 +5,8 @@ export const promiseAllOrders = () => {
 	const pizza = new Promise(
 		(resolve, reject) =>
 			// 🧪 try swapping resolve/reject to test
-			setTimeout(() => resolve("🍕 Pizza is ready!"), 3000)
-		// setTimeout(() => reject("🍕 Pizza is not ready!"), 3000)
+			// setTimeout(() => resolve("🍕 Pizza is ready!"), 3000)
+		setTimeout(() => reject("🍕 Pizza is not ready!"), 3000)
 	);
 
 	const drink = new Promise(
